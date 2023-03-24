@@ -56,7 +56,7 @@ const Mint = ({ provider, signer, user, incrementSupply, setConfetti }) => {
   const [result, reexecuteQuery] = useQuery({
     query: TokenQuery,
     variables: {
-      id: auth.user.address.toLowerCase(),
+      id: auth?.user?.address?.toLowerCase(),
       address: CONTRACT_ADDRESS,
     },
     requestPolicy: 'network-only'

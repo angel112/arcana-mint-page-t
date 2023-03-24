@@ -365,7 +365,7 @@ const ArcanaHome = () => {
               >
                 Connected to:{" "}
                 <Box as="span" className="address" color={BUTTON_COLOR}>
-                  {auth.user.email}
+                  {auth?.user?.email}
                 </Box>
               </Box>
             </Box>
